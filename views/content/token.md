@@ -47,7 +47,7 @@ If you just want to copy paste the code, then use this:
             Transfer(msg.sender, _to, _value);                   // Notify anyone listening that this transfer took place
         }
 
-        /* Allow another contract to spend some tokens in your behalf */
+        /* Allow another contract to spend some tokens on your behalf */
         function approve(address _spender, uint256 _value)
             returns (bool success) {
             allowance[msg.sender][_spender] = _value;
@@ -523,7 +523,7 @@ If you add all the advanced options, this is how the final code should look like
             Transfer(msg.sender, _to, _value);                   // Notify anyone listening that this transfer took place
         }
 
-        /* Allow another contract to spend some tokens in your behalf */
+        /* Allow another contract to spend some tokens on your behalf */
         function approve(address _spender, uint256 _value)
             returns (bool success) {
             allowance[msg.sender][_spender] = _value;
